@@ -1,3 +1,4 @@
+using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Munim.CsvNet.Tests
@@ -8,6 +9,12 @@ namespace Munim.CsvNet.Tests
         public void LoadCsv()
         {
             
+        }
+
+
+        protected string GetSample(int id)
+        {
+            return File.ReadAllText("test_data\\" + id + ".csv");
         }
     }
 }
