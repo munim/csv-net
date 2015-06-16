@@ -1,14 +1,13 @@
-﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Munim.CsvNet.Tests
 {
-    [TestClass]
-    public class CsvTest
+    public class CsvNetTestBase
     {
-        [TestMethod]
-        public void TestMethod1()
+        [ClassInitialize]
+        public void LoadCsv()
         {
+            
         }
     }
 }
